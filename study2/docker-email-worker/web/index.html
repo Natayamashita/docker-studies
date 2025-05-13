@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-mail Sender</title>
+  <style>
+    label { display: block; margin-top: 1rem; }
+    input, textarea { width: 100%; padding: 0.5rem; }
+    button { margin-top: 1rem; padding: 0.5rem 1rem; }
+  </style>
+</head>
+<body>
+  <h1>E-mail Sender</h1>
+  <form action="/api" method="POST">
+    <div>
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" required placeholder="Enter subject" />
+    </div>
+    <div>
+      <label for="message">Message</label>
+      <input type="text" id="message" name="message" required placeholder="Enter your message" />
+    </div>
+    <div>
+      <button type="submit">Send E-mail</button>
+    </div>
+  </form>
+</body>
+</html>
